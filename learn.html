@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Government Schemes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #background-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+    
+    .header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      animation: fadeInUp 1s both;
+    }
+    
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(168, 166, 166, 0.7);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .scheme {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: rgba(244, 244, 244, 0.8);
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+    
+    .scheme:hover {
+      transform: scale(1.05);
+    }
+    
+    .footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      animation: fadeInUp 1s both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <video id="background-video" autoplay muted loop>
+    <source src="vdd.mp4" type="video/mp4">
+    <!-- Add more video formats for cross-browser compatibility -->
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="header">
+    <h1>Government Schemes</h1>
+  </div>
+  
+  <div class="content">
+    <div class="scheme">
+      <h2>Yoga Scheme</h2>
+      <p>Description: This scheme promotes the practice of yoga among citizens.</p>
+      <p>Eligibility criteria: Open to all citizens above 18 years of age.</p>
+      <p>Benefits of the scheme include free yoga classes, workshops, and access to yoga resources.</p>
+      <button class="btn btn-primary" onclick="applyScheme('Yoga Scheme')">Apply</button>
+    </div>
+    
+    <div class="scheme">
+      <h2>Scheme Name 2</h2>
+      <p>Description of Scheme 2.</p>
+      <p>Eligibility criteria: Criteria for Scheme 2.</p>
+      <p>Benefits of Scheme 2.</p>
+      <button class="btn btn-primary" onclick="applyScheme('Scheme Name 2')">Apply</button>
+    </div>
+    
+    <div class="scheme">
+      <h2>Scheme Name 3</h2>
+      <p>Description of Scheme 3.</p>
+      <p>Eligibility criteria: Criteria for Scheme 3.</p>
+      <p>Benefits of Scheme 3.</p>
+      <button class="btn btn-primary" onclick="applyScheme('Scheme Name 3')">Apply</button>
+    </div>
+  </div>
+  
+  <div class="footer">
+    &copy; 2023 Government Schemes. All rights reserved.
+  </div>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    function applyScheme(schemeName) {
+      alert("You applied for " + schemeName + "!");
+      // Additional functionality for applying to the specific scheme
+    }
+  </script>
+</body>
+</html>
